@@ -1,5 +1,9 @@
 from dataclasses import dataclass
-from igRestApiClient.helper.TypeConverter import *
+from igRestApiClient.helper.TypeConverter import Any
+from igRestApiClient.helper.TypeConverter import List
+from igRestApiClient.helper.TypeConverter import from_list
+from igRestApiClient.helper.TypeConverter import from_str
+from igRestApiClient.helper.TypeConverter import to_class
 from igRestApiClient.model.Price import Price
 
 
