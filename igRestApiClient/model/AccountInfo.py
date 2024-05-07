@@ -1,5 +1,7 @@
 from dataclasses import dataclass
-from igRestApiClient.helper.TypeConverter import *
+from igRestApiClient.helper.TypeConverter import Any
+from igRestApiClient.helper.TypeConverter import from_float
+from igRestApiClient.helper.TypeConverter import to_float
 
 
 @dataclass
