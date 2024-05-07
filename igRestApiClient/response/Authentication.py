@@ -1,5 +1,12 @@
 from dataclasses import dataclass
-from igRestApiClient.helper.TypeConverter import *
+from igRestApiClient.helper.TypeConverter import Any
+from igRestApiClient.helper.TypeConverter import from_str
+from igRestApiClient.helper.TypeConverter import from_list
+from igRestApiClient.helper.TypeConverter import List
+from igRestApiClient.helper.TypeConverter import from_int
+from igRestApiClient.helper.TypeConverter import from_bool
+from igRestApiClient.helper.TypeConverter import from_none
+from igRestApiClient.helper.TypeConverter import to_class
 from igRestApiClient.model.AccountInfo import AccountInfo
 from igRestApiClient.model.AuthenticationAccount import AuthenticationAccount
 

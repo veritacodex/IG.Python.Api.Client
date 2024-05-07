@@ -20,7 +20,7 @@ def from_union(fs, x):
         try:
             return f(x)
         except:
-            pass
+            Exception("from_union")
     assert False
 
 
