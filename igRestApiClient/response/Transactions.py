@@ -8,7 +8,7 @@ from igRestApiClient.model.Transaction import Transaction
 
 @dataclass
 class Transactions:
-    transactions: List[Transaction]
+    items: List[Transaction]
 
     @staticmethod
     def from_dict(obj: Any) -> 'Transactions':
@@ -17,7 +17,7 @@ class Transactions:
         return Transactions(transactions)
 
     def to_dict(self) -> dict:
-        result: dict = {"transactions": from_list(lambda x: to_class(Transaction, x), self.transactions)}
+        result: dict = {"transactions": from_list(lambda x: to_class(Transaction, x), self.items)}
         return result
 
 

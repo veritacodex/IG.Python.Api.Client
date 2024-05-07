@@ -9,7 +9,7 @@ from igRestApiClient.model.Price import Price
 
 @dataclass
 class Prices:
-    prices: List[Price]
+    items: List[Price]
     instrument_type: str
 
     @staticmethod
@@ -20,7 +20,7 @@ class Prices:
         return Prices(prices, instrument_type)
 
     def to_dict(self) -> dict:
-        result: dict = {"prices": from_list(lambda x: to_class(Price, x), self.prices),
+        result: dict = {"prices": from_list(lambda x: to_class(Price, x), self.items),
                         "instrumentType": from_str(self.instrument_type)}
         return result
 
