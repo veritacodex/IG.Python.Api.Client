@@ -49,7 +49,7 @@ class TestIgClient(unittest.TestCase):
     def test_get_accounts(self):
         response = self.client.get_accounts()
         print_test_header(inspect.stack()[0][0].f_code.co_name)
-        for account in response.accounts:
+        for account in response.items:
             pprint(vars(account))
 
     def test_get_transactions(self):

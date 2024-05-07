@@ -8,7 +8,7 @@ from igRestApiClient.model.Account import Account
 
 @dataclass
 class Accounts:
-    accounts: List[Account]
+    items: List[Account]
 
     @staticmethod
     def from_dict(obj: Any) -> 'Accounts':
@@ -17,7 +17,7 @@ class Accounts:
         return Accounts(accounts)
 
     def to_dict(self) -> dict:
-        result: dict = {"accounts": from_list(lambda x: to_class(Account, x), self.accounts)}
+        result: dict = {"accounts": from_list(lambda x: to_class(Account, x), self.items)}
         return result
 
 
