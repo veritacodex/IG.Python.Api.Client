@@ -3,8 +3,8 @@ class OpenMarketPositionRequest:
     direction = None
     size = None
     expiry = None
-    orderType = None
-    guaranteedStop = None
-    trailingStop = None
-    forceOpen = None
-    currencyCode = None
+    order_type = None
+    guaranteed_stop = None
+    trailing_stop = None
+    force_open = None
+    currency_code = None

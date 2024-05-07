@@ -151,11 +151,11 @@ class IgRestClient:
         request.direction = side
         request.size = size
         request.expiry = Expiry.DFB
-        request.orderType = OrderType.Market
-        request.guaranteedStop = False
-        request.trailingStop = False
-        request.forceOpen = True
-        request.currencyCode = Currency.GBP
+        request.order_type = OrderType.Market
+        request.guaranteed_stop = False
+        request.trailing_stop = False
+        request.force_open = True
+        request.currency_code = Currency.GBP
         response = self.__post_response__(self.POSITIONS_OTC_URI, request, None, "2")
         return open_position_response_from_dict(json.loads(response))
 
