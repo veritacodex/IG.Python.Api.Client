@@ -111,8 +111,8 @@ class IgRestClient:
         json_content = json.dumps(request.__dict__)
         response = requests.post(self.base_uri + url, headers=headers, data=json_content)
         if response.status_code != 200:
-            message = ''.join(['invalid response calling ', self.base_uri + url, response.text])
-            raise Exception(message)
+            message = ''.join(['Invalid response calling ', self.base_uri + url, response.text])
+            raise requests.exceptions.HTTPError(message)
         else:
             return response.text
 
