@@ -1,6 +1,11 @@
 from dataclasses import dataclass
 
-from igRestApiClient.helper.TypeConverter import *
+from igRestApiClient.helper.TypeConverter import datetime
+from igRestApiClient.helper.TypeConverter import Any
+from igRestApiClient.helper.TypeConverter import from_datetime
+from igRestApiClient.helper.TypeConverter import from_str
+from igRestApiClient.helper.TypeConverter import from_bool
+from igRestApiClient.helper.TypeConverter import to_enum
 from igRestApiClient.model.enum.Currency import Currency
 from igRestApiClient.model.enum.Period import Period
 from igRestApiClient.model.enum.TransactionType import TransactionType

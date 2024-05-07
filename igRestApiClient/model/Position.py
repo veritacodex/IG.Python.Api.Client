@@ -1,6 +1,14 @@
 from dataclasses import dataclass
 
-from igRestApiClient.helper.TypeConverter import *
+from igRestApiClient.helper.TypeConverter import datetime
+from igRestApiClient.helper.TypeConverter import Any
+from igRestApiClient.helper.TypeConverter import from_float
+from igRestApiClient.helper.TypeConverter import from_str
+from igRestApiClient.helper.TypeConverter import from_datetime
+from igRestApiClient.helper.TypeConverter import from_none
+from igRestApiClient.helper.TypeConverter import from_bool
+from igRestApiClient.helper.TypeConverter import to_enum
+from igRestApiClient.helper.TypeConverter import to_float
 from igRestApiClient.model.enum.Currency import Currency
 from igRestApiClient.model.enum.Direction import Direction
 
