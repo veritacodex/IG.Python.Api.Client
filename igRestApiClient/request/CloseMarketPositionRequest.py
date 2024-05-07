@@ -1,5 +1,5 @@
 class CloseMarketPositionRequest:
-    dealId = None
+    deal_id = None
     direction = None
-    orderType = None
+    order_type = None
     size = None

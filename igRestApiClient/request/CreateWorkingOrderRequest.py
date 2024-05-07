@@ -1,17 +1,17 @@
 class CreateWorkingOrderRequest:
-    currencyCode = None
+    currency_code = None
     direction = None
     epic = None
     expiry = None
-    forceOpen = None
-    guaranteedStop = None
+    force_open = None
+    guaranteed_stop = None
     level = None
-    limitDistance = None
-    timeInForce = None
-    limitLevel = None
+    limit_distance = None
+    time_in_force = None
+    limit_level = None
     type = None
-    quoteId = None
+    quote_id = None
     size = None
-    stopDistance = None
-    stopLevel = None
-    goodTillDate = None
+    stop_distance = None
+    stop_level = None
+    good_till_date = None

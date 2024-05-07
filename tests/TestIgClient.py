@@ -80,9 +80,9 @@ class TestIgClient(unittest.TestCase):
         create_working_order_request.direction = "BUY"
         create_working_order_request.expiry = "DFB"
         create_working_order_request.size = "1"
-        create_working_order_request.timeInForce = "GOOD_TILL_CANCELLED"
-        create_working_order_request.currencyCode = "GBP"
-        create_working_order_request.guaranteedStop = False
+        create_working_order_request.time_in_force = "GOOD_TILL_CANCELLED"
+        create_working_order_request.currency_code = "GBP"
+        create_working_order_request.guaranteed_stop = False
         create_working_order_request.type = "LIMIT"
         create_working_order_request.level = "11450"
         data = self.client.create_working_order(create_working_order_request)
@@ -97,13 +97,13 @@ class TestIgClient(unittest.TestCase):
         create_working_order_request.direction = "BUY"
         create_working_order_request.expiry = "DFB"
         create_working_order_request.size = "1"
-        create_working_order_request.timeInForce = "GOOD_TILL_CANCELLED"
-        create_working_order_request.currencyCode = "GBP"
-        create_working_order_request.guaranteedStop = False
+        create_working_order_request.time_in_force = "GOOD_TILL_CANCELLED"
+        create_working_order_request.currency_code = "GBP"
+        create_working_order_request.guaranteed_stop = False
         create_working_order_request.type = "LIMIT"
         create_working_order_request.level = "11450"
-        create_working_order_request.stopLevel = "11350"
-        create_working_order_request.limitLevel = "11550"
+        create_working_order_request.stop_level = "11350"
+        create_working_order_request.limit_level = "11550"
         data = self.client.create_working_order(create_working_order_request)
         self.assertNotEqual(bool(data), False, "No response retrieved")
         deal_reference = data['dealReference']

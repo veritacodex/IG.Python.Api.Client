@@ -161,9 +161,9 @@ class IgRestClient:
 
     def close_market_position(self, deal_id, side, size):
         request = CloseMarketPositionRequest()
-        request.dealId = deal_id
+        request.deal_id = deal_id
         request.direction = Direction.BUY if side == Direction.SELL.value else Direction.SELL
-        request.orderType = OrderType.Market
+        request.order_type = OrderType.Market
         request.size = size
         response = self.__post_response__(self.POSITIONS_OTC_URI, request, "DELETE", "1")
         return close_position_response_from_dict(json.loads(response))
