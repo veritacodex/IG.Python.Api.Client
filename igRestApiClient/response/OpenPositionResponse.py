@@ -16,10 +16,7 @@ def from_none(x: Any) -> Any:
 
 def from_union(fs, x):
     for f in fs:
-        try:
-            return f(x)
-        except:
-            pass
+        return f(x)
     assert False
 
 

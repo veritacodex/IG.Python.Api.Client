@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='IG.Python.Api.Client',
-    version=1.0,
+    version='1.0',
     description='IG Markets Python igRestApiClient',
     url='https://github.com/oneangrytrader/IG.Python.Api.Client',
     author='Verita Codex',
