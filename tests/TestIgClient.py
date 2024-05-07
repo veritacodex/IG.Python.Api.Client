@@ -61,7 +61,7 @@ class TestIgClient(unittest.TestCase):
     def test_get_activities(self):
         response = self.client.get_activities(datetime.datetime(2020, 10, 1))
         print_test_header(inspect.stack()[0][0].f_code.co_name)
-        for activity in response.activities:
+        for activity in response.items:
             pprint(vars(activity))
 
     def test_get_historical_prices(self):
