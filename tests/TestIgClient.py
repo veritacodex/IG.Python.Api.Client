@@ -43,7 +43,7 @@ class TestIgClient(unittest.TestCase):
     def test_get_positions(self):
         response = self.client.get_positions()
         print_test_header(inspect.stack()[0][0].f_code.co_name)
-        for position in response.positions:
+        for position in response.items:
             pprint(vars(position))
 
     def test_get_accounts(self):

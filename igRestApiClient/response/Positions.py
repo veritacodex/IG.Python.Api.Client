@@ -27,7 +27,7 @@ class PositionElement:
 
 @dataclass
 class Positions:
-    positions: List[PositionElement]
+    items: List[PositionElement]
 
     @staticmethod
     def from_dict(obj: Any) -> 'Positions':
@@ -36,7 +36,7 @@ class Positions:
         return Positions(positions)
 
     def to_dict(self) -> dict:
-        result: dict = {"positions": from_list(lambda x: to_class(PositionElement, x), self.positions)}
+        result: dict = {"positions": from_list(lambda x: to_class(PositionElement, x), self.items)}
         return result
 
 
